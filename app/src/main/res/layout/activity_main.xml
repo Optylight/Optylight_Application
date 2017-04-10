@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#fff"
+    android:background="#5fc073"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,16 +12,282 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="optylight.norlia.net.MainActivity">
 
-    <ImageButton
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/op"
-        android:id="@+id/imageButton"
-        android:background="@android:color/transparent"
-        android:layout_alignParentTop="true"
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentStart="true"
-        android:elevation="24dp" />
+        android:layout_alignParentTop="true"
+        android:background="#fff" />
 
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="413dp"
+        android:accessibilityTraversalAfter="@+id/activity_main"
+        android:accessibilityTraversalBefore="@+id/activity_main"
+        android:background="@color/colorPrimaryDark"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/optylight_logo"
+        tools:accessibilityTraversalAfter="@id/activity_main" />
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="127dp"
+        android:background="@color/colorAccent"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Mes lampes"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorLink="@color/colorPrimary"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:scaleType="matrix"
+        app:srcCompat="@drawable/off"
+        android:layout_below="@+id/textView" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:scaleType="matrix"
+        app:srcCompat="@drawable/off" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:elevation="0dp"
+        android:scaleType="matrix"
+        app:srcCompat="@drawable/off"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_below="@+id/imageButton"
+        android:text="  Salon"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="  Salon" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:text="  Entrée"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="  Entrée" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:text=" Mezzanine"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text=" Mezzanine" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_below="@+id/imageButton"
+        android:text="  Salon"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="  Salon" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageButton5"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/auto" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageButton"
+        android:background="@android:color/transparent"
+        android:onClick="tarteauxpommes"
+        app:srcCompat="@drawable/auto" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/on"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="14dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/on" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageButton"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/on" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageButton8"
+        android:text="Salle à manger"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="Salle à manger" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salle de bain"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="Salle de bain"
+        android:layout_below="@+id/imageButton12"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chambre"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="Chambre"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Cuisine  "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="  Cuisine  "
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:text="  Garage  "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="  Garage  " />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:text="  Cuisine  "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        tools:text="  Cuisine  " />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/auto" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageButton12"
+        android:background="@android:color/transparent"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/off" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageButton12"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/on" />
 
 </RelativeLayout>
