@@ -10,7 +10,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="optylight.norlia.net.Chambre">
+    tools:context="optylight.norlia.net.salleamanger">
 
     <TextView
         android:id="@+id/textView12"
@@ -20,7 +20,7 @@
         android:layout_marginRight="8dp"
         android:background="@color/colorAccent"
         android:fontFamily="sans-serif-condensed"
-        android:text="Chambre"
+        android:text="Salle à manger"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/colorPrimaryDark"
@@ -28,19 +28,19 @@
         android:textStyle="bold"
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteY="1dp"
-        tools:text="Chambre" />
+        tools:text="Salle à manger" />
 
     <SeekBar
         android:id="@+id/tartealapeche"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="33dp"
         android:background="@color/colorPrimaryDark"
         android:progress="50"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="336dp"
-        android:layout_marginBottom="33dp"
-        android:layout_alignBottom="@+id/textView13"
-        android:layout_alignParentStart="true" />
+        tools:layout_editor_absoluteY="336dp" />
 
     <TextView
         android:id="@+id/textView13"
@@ -115,9 +115,9 @@
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="29dp"
-        app:srcCompat="@drawable/logoreduct"
         android:layout_above="@+id/tartealapeche"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        app:srcCompat="@drawable/logoreduct" />
 
 </RelativeLayout>

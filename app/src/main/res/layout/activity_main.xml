@@ -69,8 +69,8 @@
         android:layout_below="@+id/textView" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
-        android:layout_width="match_parent"
+        android:id="@+id/my_image_button2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_marginTop="36dp"
@@ -81,14 +81,14 @@
 
     <ImageButton
         android:id="@+id/imageButton8"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/imageButton2"
         android:background="@android:color/transparent"
         android:elevation="0dp"
         android:scaleType="matrix"
-        app:srcCompat="@drawable/off"
-        android:layout_alignTop="@+id/imageButton2"
-        android:layout_alignParentStart="true" />
+        app:srcCompat="@drawable/off" />
 
     <TextView
         android:id="@+id/textView2"
@@ -138,54 +138,43 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/imageButton5"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/auto" />
+        app:srcCompat="@drawable/auto"
+        android:layout_alignTop="@+id/imageButton5"
+        android:layout_alignStart="@+id/my_image_button" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="match_parent"
+        android:id="@+id/my_image_button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/imageButton"
         android:background="@android:color/transparent"
-        android:onClick="tarteauxpommes"
-        app:srcCompat="@drawable/auto" />
+
+        app:srcCompat="@drawable/auto"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_centerHorizontal="true" />
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/on"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView4" />
+
+    <ImageButton
+        android:id="@+id/my_image_button3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:scaleType="fitEnd"
         app:srcCompat="@drawable/on"
-        android:layout_marginTop="14dp"
-        android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true" />
-
-    <ImageButton
-        android:id="@+id/imageButton10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView2"
-        android:layout_marginTop="14dp"
-        android:background="@android:color/transparent"
-        android:scaleType="fitEnd"
-        app:srcCompat="@drawable/on" />
-
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignTop="@+id/imageButton"
-        android:background="@android:color/transparent"
-        android:scaleType="fitEnd"
-        app:srcCompat="@drawable/on" />
+        android:layout_alignStart="@+id/textView8" />
 
     <TextView
         android:id="@+id/textView3"
@@ -262,32 +251,32 @@
 
     <ImageButton
         android:id="@+id/imageButton12"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView6"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
-        app:srcCompat="@drawable/auto" />
+        app:srcCompat="@drawable/auto"
+        android:layout_below="@+id/textView6"
+        android:layout_alignStart="@+id/imageButton2" />
 
     <ImageButton
         android:id="@+id/imageButton13"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/imageButton12"
         android:background="@android:color/transparent"
         android:scaleType="fitStart"
-        app:srcCompat="@drawable/off" />
+        app:srcCompat="@drawable/off"
+        android:layout_alignTop="@+id/imageButton12"
+        android:layout_alignParentStart="true" />
 
     <ImageButton
         android:id="@+id/imageButton14"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/imageButton12"
         android:background="@android:color/transparent"
         android:scaleType="fitEnd"
-        app:srcCompat="@drawable/on" />
+        app:srcCompat="@drawable/on"
+        android:layout_alignTop="@+id/imageButton12"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
